@@ -1,0 +1,56 @@
+
+    html,body{
+      height:100vh;
+    }
+
+        /* CSS for left div */
+    .left-div {
+      /*background-image: url('left-harmony.JPG'); !* Specify the path to your image *!*/
+      background-size: cover; /* Cover the entire background */
+      background-position: center; /* Center the background */
+      color: white; /* Text color */
+      padding: 20px; /* Add padding for content */
+      height: 1000px; /* Make div full height */
+    }
+
+     .right-div {
+      /*background-image: url('homes3.JPG'); !* Specify the path to your image *!*/
+      /* background-size: cover; !* Cover the entire background *!*/
+      /*background-position: center; !* Center the background *!*/
+       color: black; /* Text color */
+      /*padding: 20px; !* Add padding for content *!*/
+       height: 1000px; /* Make div full height */
+       /*display:grid;*/
+       /*grid-template-columns:repeat(2,1fr);*/
+       /*gap:10px;*/
+       background-image:linear-gradient(to bottom, #69b2f8, #a3cc52);
+
+    }
+     .custom-navbar{
+       padding-top:20px;
+       padding-bottom:30px;
+       background-color: white;
+     }
+
+       .card img {
+    max-height: 60%; /* Maximum height of the image */
+    width: 100%; /* Maintain aspect ratio */
+    display: block; /* Ensure image is treated as a block element */
+    margin: auto; /* Center the image horizontally */
+  }
+       gmp-map{
+         border:2px solid black;
+
+       }
+
+
+    @media (min-width: 992px) {
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .navbar-collapse {
+      position: relative;
+    }
+  }

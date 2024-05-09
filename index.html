@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Find your dream home with our comprehensive real estate services.
+  Browse listings, buy, rent, sell, and more.">
+
+  <title>Harmony Real Estate: Find Your Dream Home</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="estate-design.css">
+
+
+  <script src="https://kit.fontawesome.com/54a1d39497.js" crossorigin="anonymous"></script>
+ <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3rUIhe2-8AVOH5_-0_vEB2DAf7keNn2M&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-light  custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <div class="navbar-brand mx-auto">
+      <img src="harmony.jpg" height="100px" alt="Logo">
+    </div>
+
+    <!-- Toggler button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Add all links here -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home Loans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Agent Finder</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <!-- Include right side links here -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Manage Rentals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Advertise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<div class="container-fluid w-100" style="border:1px solid black">
+  <div class="row">
+    <div class="col-md-6">
+
+
+  <!-- Search bar -->
+        <div class="input-group mt-3 mb-3 ">
+          <input type="text" class="form-control" placeholder="Choose a City" aria-label="Search" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown mb-3 mt-3 ">
+        <button class="btn btn-secondary dropdown-toggle mr-2" type="button" id="forSaleDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          For Sale
+        </button>
+         <button class="btn btn-secondary dropdown-toggle mr-2" type="button" id="price" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Price
+        </button>
+         <button class="btn btn-secondary dropdown-toggle mr-2" type="button" id="personals" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Beds and Baths
+        </button>
+         <button class="btn btn-secondary dropdown-toggle mr-2" type="button" id="homes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home Type
+        </button>
+        <button class="btn btn-primary"> Save Search</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <!-- Left Div -->
+    <div class="col-md-6 left-div" style="background-color:gray">
+      <!-- Map for the left div -->
+       <gmp-map center="38.5816,-121.4944" zoom="13" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="38.5816,-121.4944" title="DEMO_MAP"></gmp-advanced-marker>
+    </gmp-map>
+
+    </div>
+
+    <!-- Right Div -->
+   <div class="col-md-6 right-div" >
+  <!-- Content for the right div -->
+  <h4 class="mt-3">Sacramento CA Real Estate & Homes For Sale</h4>
+  <h5>1,972 results</h5>
+     <button class="btn btn-secondary dropdown-toggle mr-2" style="position:absolute; top:40px;right:10px;background-color: transparent;border:none;
+      " type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sort
+        </button>
+
+  <!-- Card container using display grid -->
+  <div class="card-container"style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+    <!-- First card -->
+   <div class="card" style="height:380px; overflow: hidden;">
+  <img src="cali-home.jpeg" class="card-img-top" alt="...">
+  <div class="card-body" style="font-size: 16px;">
+    <p class="card-text">
+      <strong>$272,900</strong><i class="fa-solid fa-ellipsis" style="margin-left: 230px" ></i>
+    </p>
+    <p style="font-size: 10px;">5 bds | 3 ba | --sqft - House for sale</p>
+    <p style="font-size: 10px;">123 Sunshine Avenue, Sacramento, CA 95814</p>
+    <p style="font-size: 10px;">HARMONY HOMES REALTY, LLC</p>
+  </div>
+</div>
+
+    <!-- Second card -->
+    <div class="card" style="height:380px; overflow: hidden;">
+  <img src="cali-home4.webp" class="card-img-top" alt="...">
+  <div class="card-body" style="font-size: 16px;">
+    <p class="card-text">
+      <strong>$325,000</strong><i class="fa-solid fa-ellipsis" style="margin-left: 230px" ></i>
+    </p>
+    <p style="font-size: 10px;">5 bds | 3 ba | --sqft - House for sale</p>
+    <p style="font-size: 10px;">123 Sunshine Avenue, Sacramento, CA 95814</p>
+    <p style="font-size: 10px;">HARMONY HOMES REALTY, LLC</p>
+  </div>
+</div>
+
+    <!-- Third card -->
+      <div class="card" style="height:380px; overflow: hidden;">
+  <img src="cali-home3.jpeg" class="card-img-top" alt="...">
+  <div class="card-body" style="font-size: 16px;">
+    <p class="card-text">
+      <strong>$572,900</strong><i class="fa-solid fa-ellipsis" style="margin-left: 230px" ></i>
+    </p>
+    <p style="font-size: 10px;">5 bds | 3 ba | --sqft - House for sale</p>
+    <p style="font-size: 10px;">123 Sunshine Avenue, Sacramento, CA 95814</p>
+    <p style="font-size: 10px;">HARMONY HOMES REALTY, LLC</p>
+  </div>
+</div>
+
+    <!-- Fourth card -->
+    <div class="card" style="height:380px; overflow: hidden;">
+  <img src="cali-home6.jpeg" class="card-img-top" alt="...">
+  <div class="card-body" style="font-size: 16px;">
+    <p class="card-text">
+      <strong>$985,999</strong>   <i class="fa-solid fa-ellipsis" style="margin-left: 230px" ></i>
+    </p>
+    <p style="font-size: 10px;">5 bds | 3 ba | --sqft - House for sale</p>
+    <p style="font-size: 10px;">123 Sunshine Avenue, Sacramento, CA 95814</p>
+    <p style="font-size: 10px;">HARMONY HOMES REALTY, LLC</p>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</script>
+</body>
+</html>
